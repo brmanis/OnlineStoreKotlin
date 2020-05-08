@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/welcome" />
 
     <EditText
-        android:id="@+id/edtEmail"
+        android:id="@+id/sign_up_edtEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,16 +27,16 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@android:color/holo_orange_dark"
+        android:drawableRight="@drawable/email"
         android:ems="10"
         android:hint="Please enter an email..."
-        android:inputType="textPersonName"
+        android:inputType="textWebEmailAddress|textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgWelcome"
-        android:drawableRight="@drawable/email"/>
+        app:layout_constraintTop_toBottomOf="@+id/imgWelcome" />
 
     <EditText
-        android:id="@+id/edtUsername"
+        android:id="@+id/sign_up_edtUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,11 +50,11 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_edtEmail"
         android:drawableRight="@drawable/person"/>
 
     <EditText
-        android:id="@+id/edtPassword"
+        android:id="@+id/sign_up_edtPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -63,16 +63,16 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@android:color/holo_orange_dark"
+        android:drawableRight="@drawable/password"
         android:ems="10"
         android:hint="Please enter a password..."
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtUsername"
-        android:drawableRight="@drawable/password"/>
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_edtUsername" />
 
     <EditText
-        android:id="@+id/edtConfirmPW"
+        android:id="@+id/sign_up_edtConfirmPW"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -81,16 +81,16 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="@android:color/holo_orange_dark"
+        android:drawableRight="@drawable/confirmpw"
         android:ems="10"
         android:hint="Please confirm your password..."
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
-        android:drawableRight="@drawable/confirmpw"/>
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_edtPassword" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/sign_up_btnSignUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -104,11 +104,11 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtConfirmPW"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_edtConfirmPW"
         />
 
     <Button
-        android:id="@+id/btnLogIn"
+        android:id="@+id/sign_up_btnLogIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -122,5 +122,5 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_btnSignUp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
